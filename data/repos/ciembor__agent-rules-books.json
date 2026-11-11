@@ -1,0 +1,160 @@
+{
+  "repo": "ciembor/agent-rules-books",
+  "treeTruncated": false,
+  "skills": [
+    {
+      "entry": "a-philosophy-of-software-design/SKILL.md",
+      "path": "a-philosophy-of-software-design",
+      "name": "a-philosophy-of-software-design",
+      "description": "Apply John Ousterhout-inspired software design rules when reducing complexity, designing module boundaries, or reviewing APIs and abstractions.",
+      "content": "---\nname: a-philosophy-of-software-design\ndescription: Apply John Ousterhout-inspired software design rules when reducing complexity, designing module boundaries, or reviewing APIs and abstractions.\nlicense: MIT\n---\n\n# A Philosophy of Software Design Skill\n\nUse this skill when a task involves module design, API design, information hiding, abstraction depth, cognitive load, or refactoring shallow interfaces.\n\nBefore making design or code decisions, read and apply [a-philosophy-of-software-design.mini.md](a-philosophy-of-software-design.mini.md). Use [a-philosophy-of-software-design.md](a-philosophy-of-software-design.md) only as a deeper reference when the mini rules are not enough for the current design tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/a-philosophy-of-software-design/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/a-philosophy-of-software-design",
+      "error": ""
+    },
+    {
+      "entry": "clean-architecture/SKILL.md",
+      "path": "clean-architecture",
+      "name": "clean-architecture",
+      "description": "Apply Robert C. Martin-inspired architecture rules when separating business policy from frameworks, databases, UI, or infrastructure details.",
+      "content": "---\nname: clean-architecture\ndescription: Apply Robert C. Martin-inspired architecture rules when separating business policy from frameworks, databases, UI, or infrastructure details.\nlicense: MIT\n---\n\n# Clean Architecture Skill\n\nUse this skill when a task involves architectural boundaries, dependency direction, use cases, entities, interface adapters, framework isolation, or technology churn.\n\nBefore making design or code decisions, read and apply [clean-architecture.mini.md](clean-architecture.mini.md). Use [clean-architecture.md](clean-architecture.md) only as a deeper reference when the mini rules are not enough for the current architectural tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/clean-architecture/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/clean-architecture",
+      "error": ""
+    },
+    {
+      "entry": "clean-code/SKILL.md",
+      "path": "clean-code",
+      "name": "clean-code",
+      "description": "Apply Robert C. Martin-inspired clean code rules when improving readability, naming, function design, responsibilities, or testable everyday code.",
+      "content": "---\nname: clean-code\ndescription: Apply Robert C. Martin-inspired clean code rules when improving readability, naming, function design, responsibilities, or testable everyday code.\nlicense: MIT\n---\n\n# Clean Code Skill\n\nUse this skill when a task involves everyday implementation quality, naming, small functions, readable control flow, responsibilities, comments, errors, or tests.\n\nBefore making design or code decisions, read and apply [clean-code.mini.md](clean-code.mini.md). Use [clean-code.md](clean-code.md) only as a deeper reference when the mini rules are not enough for the current code-quality tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/clean-code/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/clean-code",
+      "error": ""
+    },
+    {
+      "entry": "code-complete/SKILL.md",
+      "path": "code-complete",
+      "name": "code-complete",
+      "description": "Apply Steve McConnell-inspired construction rules when implementing routines, variables, classes, control flow, defensive code, or tests.",
+      "content": "---\nname: code-complete\ndescription: Apply Steve McConnell-inspired construction rules when implementing routines, variables, classes, control flow, defensive code, or tests.\nlicense: MIT\n---\n\n# Code Complete Skill\n\nUse this skill when a task involves disciplined software construction: routine design, variable use, class design, control flow, defensive programming, coding standards, or implementation testing.\n\nBefore making design or code decisions, read and apply [code-complete.mini.md](code-complete.mini.md). Use [code-complete.md](code-complete.md) only as a deeper reference when the mini rules are not enough for the current construction tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/code-complete/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/code-complete",
+      "error": ""
+    },
+    {
+      "entry": "designing-data-intensive-applications/SKILL.md",
+      "path": "designing-data-intensive-applications",
+      "name": "designing-data-intensive-applications",
+      "description": "Apply Martin Kleppmann-inspired data-system rules when designing reliability, scalability, consistency, replication, transactions, streams, or schema evolution.",
+      "content": "---\nname: designing-data-intensive-applications\ndescription: Apply Martin Kleppmann-inspired data-system rules when designing reliability, scalability, consistency, replication, transactions, streams, or schema evolution.\nlicense: MIT\n---\n\n# Designing Data-Intensive Applications Skill\n\nUse this skill when a task involves data ownership, consistency semantics, event flows, replication, partitioning, transactions, streams, batch processing, fault tolerance, or schema evolution.\n\nBefore making design or code decisions, read and apply [designing-data-intensive-applications.mini.md](designing-data-intensive-applications.mini.md). Use [designing-data-intensive-applications.md](designing-data-intensive-applications.md) only as a deeper reference when the mini rules are not enough for the current data-system tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/designing-data-intensive-applications/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/designing-data-intensive-applications",
+      "error": ""
+    },
+    {
+      "entry": "domain-driven-design-distilled/SKILL.md",
+      "path": "domain-driven-design-distilled",
+      "name": "domain-driven-design-distilled",
+      "description": "Apply Vaughn Vernon-inspired lightweight DDD rules when using bounded contexts, subdomains, context maps, and tactical modeling without excess ceremony.",
+      "content": "---\nname: domain-driven-design-distilled\ndescription: Apply Vaughn Vernon-inspired lightweight DDD rules when using bounded contexts, subdomains, context maps, and tactical modeling without excess ceremony.\nlicense: MIT\n---\n\n# Domain-Driven Design Distilled Skill\n\nUse this skill when a task needs practical DDD guidance for subdomains, bounded contexts, context mapping, aggregates, domain events, or tactical modeling with restrained ceremony.\n\nBefore making design or code decisions, read and apply [domain-driven-design-distilled.mini.md](domain-driven-design-distilled.mini.md). Use [domain-driven-design-distilled.md](domain-driven-design-distilled.md) only as a deeper reference when the mini rules are not enough for the current DDD tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design-distilled/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/domain-driven-design-distilled",
+      "error": ""
+    },
+    {
+      "entry": "domain-driven-design/SKILL.md",
+      "path": "domain-driven-design",
+      "name": "domain-driven-design",
+      "description": "Apply Eric Evans-inspired DDD rules when modeling a complex domain, defining bounded contexts, protecting ubiquitous language, or designing aggregates.",
+      "content": "---\nname: domain-driven-design\ndescription: Apply Eric Evans-inspired DDD rules when modeling a complex domain, defining bounded contexts, protecting ubiquitous language, or designing aggregates.\nlicense: MIT\n---\n\n# Domain-Driven Design Skill\n\nUse this skill when a task involves strategic domain modeling, ubiquitous language, bounded contexts, context mapping, aggregates, repositories, domain services, or model-driven design.\n\nBefore making design or code decisions, read and apply [domain-driven-design.mini.md](domain-driven-design.mini.md). Use [domain-driven-design.md](domain-driven-design.md) only as a deeper reference when the mini rules are not enough for the current domain-modeling tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/domain-driven-design/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/domain-driven-design",
+      "error": ""
+    },
+    {
+      "entry": "implementing-domain-driven-design/SKILL.md",
+      "path": "implementing-domain-driven-design",
+      "name": "implementing-domain-driven-design",
+      "description": "Apply Vaughn Vernon-inspired implementation DDD rules when building aggregates, domain events, repositories, application services, or context integrations.",
+      "content": "---\nname: implementing-domain-driven-design\ndescription: Apply Vaughn Vernon-inspired implementation DDD rules when building aggregates, domain events, repositories, application services, or context integrations.\nlicense: MIT\n---\n\n# Implementing Domain-Driven Design Skill\n\nUse this skill when a task involves implementing DDD in code: aggregate boundaries, invariants, repositories, domain events, application services, modules, factories, or bounded-context integration.\n\nBefore making design or code decisions, read and apply [implementing-domain-driven-design.mini.md](implementing-domain-driven-design.mini.md). Use [implementing-domain-driven-design.md](implementing-domain-driven-design.md) only as a deeper reference when the mini rules are not enough for the current implementation tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/implementing-domain-driven-design/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/implementing-domain-driven-design",
+      "error": ""
+    },
+    {
+      "entry": "patterns-of-enterprise-application-architecture/SKILL.md",
+      "path": "patterns-of-enterprise-application-architecture",
+      "name": "patterns-of-enterprise-application-architecture",
+      "description": "Apply Martin Fowler-inspired enterprise architecture rules when choosing layers, service layers, transaction scripts, domain models, repositories, mappers, or DTOs.",
+      "content": "---\nname: patterns-of-enterprise-application-architecture\ndescription: Apply Martin Fowler-inspired enterprise architecture rules when choosing layers, service layers, transaction scripts, domain models, repositories, mappers, or DTOs.\nlicense: MIT\n---\n\n# Patterns of Enterprise Application Architecture Skill\n\nUse this skill when a task involves enterprise application structure, layering, service layer, transaction script, domain model, data mapper, repository, unit of work, identity map, DTOs, or integration patterns.\n\nBefore making design or code decisions, read and apply [patterns-of-enterprise-application-architecture.mini.md](patterns-of-enterprise-application-architecture.mini.md). Use [patterns-of-enterprise-application-architecture.md](patterns-of-enterprise-application-architecture.md) only as a deeper reference when the mini rules are not enough for the current enterprise-pattern tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/patterns-of-enterprise-application-architecture/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/patterns-of-enterprise-application-architecture",
+      "error": ""
+    },
+    {
+      "entry": "refactoring-guru/SKILL.md",
+      "path": "refactoring-guru",
+      "name": "refactoring-guru",
+      "description": "Apply Refactoring.Guru-inspired rules when diagnosing code smells, choosing refactoring techniques, and stopping cleanup before uncontrolled redesign.",
+      "content": "---\nname: refactoring-guru\ndescription: Apply Refactoring.Guru-inspired rules when diagnosing code smells, choosing refactoring techniques, and stopping cleanup before uncontrolled redesign.\nlicense: MIT\n---\n\n# Refactoring.Guru Skill\n\nUse this skill when a task involves diagnosing smells, choosing targeted refactoring treatments, preserving behavior, applying a refactoring catalog, or avoiding uncontrolled redesign.\n\nBefore making design or code decisions, read and apply [refactoring-guru.mini.md](refactoring-guru.mini.md). Use [refactoring-guru.md](refactoring-guru.md) only as a deeper reference when the mini rules are not enough for the current refactoring tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/refactoring-guru/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/refactoring-guru",
+      "error": ""
+    },
+    {
+      "entry": "refactoring/SKILL.md",
+      "path": "refactoring",
+      "name": "refactoring",
+      "description": "Apply Martin Fowler-inspired refactoring rules when improving existing code structure while preserving observable behavior.",
+      "content": "---\nname: refactoring\ndescription: Apply Martin Fowler-inspired refactoring rules when improving existing code structure while preserving observable behavior.\nlicense: MIT\n---\n\n# Refactoring Skill\n\nUse this skill when a task involves behavior-preserving code improvement, code smells, small refactoring steps, test-backed cleanup, or separating refactoring from feature changes.\n\nBefore making design or code decisions, read and apply [refactoring.mini.md](refactoring.mini.md). Use [refactoring.md](refactoring.md) only as a deeper reference when the mini rules are not enough for the current refactoring tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/refactoring/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/refactoring",
+      "error": ""
+    },
+    {
+      "entry": "release-it/SKILL.md",
+      "path": "release-it",
+      "name": "release-it",
+      "description": "Apply Michael T. Nygard-inspired production reliability rules when designing failure handling, timeouts, retries, circuit breakers, observability, or deployment behavior.",
+      "content": "---\nname: release-it\ndescription: Apply Michael T. Nygard-inspired production reliability rules when designing failure handling, timeouts, retries, circuit breakers, observability, or deployment behavior.\nlicense: MIT\n---\n\n# Release It! Skill\n\nUse this skill when a task involves production reliability, integration failure, timeouts, retries, circuit breakers, bulkheads, backpressure, observability, capacity, deployment, or operational readiness.\n\nBefore making design or code decisions, read and apply [release-it.mini.md](release-it.mini.md). Use [release-it.md](release-it.md) only as a deeper reference when the mini rules are not enough for the current production-reliability tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/release-it/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/release-it",
+      "error": ""
+    },
+    {
+      "entry": "the-pragmatic-programmer/SKILL.md",
+      "path": "the-pragmatic-programmer",
+      "name": "the-pragmatic-programmer",
+      "description": "Apply Hunt and Thomas-inspired pragmatic programming rules when improving engineering judgment, feedback loops, DRY knowledge, orthogonality, automation, or adaptability.",
+      "content": "---\nname: the-pragmatic-programmer\ndescription: Apply Hunt and Thomas-inspired pragmatic programming rules when improving engineering judgment, feedback loops, DRY knowledge, orthogonality, automation, or adaptability.\nlicense: MIT\n---\n\n# The Pragmatic Programmer Skill\n\nUse this skill when a task involves pragmatic engineering judgment, responsibility, DRY at the knowledge level, orthogonality, automation, prototyping, fast feedback, or adaptable design.\n\nBefore making design or code decisions, read and apply [the-pragmatic-programmer.mini.md](the-pragmatic-programmer.mini.md). Use [the-pragmatic-programmer.md](the-pragmatic-programmer.md) only as a deeper reference when the mini rules are not enough for the current engineering tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/the-pragmatic-programmer/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/the-pragmatic-programmer",
+      "error": ""
+    },
+    {
+      "entry": "working-effectively-with-legacy-code/SKILL.md",
+      "path": "working-effectively-with-legacy-code",
+      "name": "working-effectively-with-legacy-code",
+      "description": "Apply Michael Feathers-inspired legacy-code rules when changing hard-to-test code safely with characterization tests, seams, sprout methods, or wrap methods.",
+      "content": "---\nname: working-effectively-with-legacy-code\ndescription: Apply Michael Feathers-inspired legacy-code rules when changing hard-to-test code safely with characterization tests, seams, sprout methods, or wrap methods.\nlicense: MIT\n---\n\n# Working Effectively with Legacy Code Skill\n\nUse this skill when a task involves risky legacy changes, missing tests, characterization tests, seams, dependency breaking, sprout method, wrap method, or incremental risk reduction.\n\nBefore making design or code decisions, read and apply [working-effectively-with-legacy-code.mini.md](working-effectively-with-legacy-code.mini.md). Use [working-effectively-with-legacy-code.md](working-effectively-with-legacy-code.md) only as a deeper reference when the mini rules are not enough for the current legacy-code tradeoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/ciembor/agent-rules-books/blob/main/working-effectively-with-legacy-code/SKILL.md",
+      "installUrl": "https://github.com/ciembor/agent-rules-books/tree/main/working-effectively-with-legacy-code",
+      "error": ""
+    }
+  ]
+}
