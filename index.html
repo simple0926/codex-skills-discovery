@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="发现 GitHub 上公开发布的 Codex Skills，审阅 SKILL.md 后复制安装指令。" />
+    <title>Skills Index · Codex Skills Discovery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#repositoryGrid">跳到搜索结果</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Skills Index 首页"><span>SK/</span><strong>Skills Index</strong></a>
+      <div class="header-actions">
+        <div class="language-switch" id="languageSwitch" role="group" aria-label="界面语言">
+          <button type="button" data-language="zh" aria-pressed="true">中文</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="github-link" href="https://github.com/topics/agent-skills" target="_blank" rel="noreferrer">GITHUB ↗</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="search-deck" aria-label="搜索和筛选 Skills">
+        <form class="search-bar" id="searchForm">
+          <label for="searchInput" data-i18n="searchLabel">搜索</label>
+          <input id="searchInput" type="search" placeholder="输入能力，例如 PDF、testing、design…" data-i18n-placeholder="searchPlaceholder" autocomplete="off" />
+          <button id="searchButton" type="submit"><span data-i18n="searchButton">搜索索引</span><span>→</span></button>
+        </form>
+        <div class="filter-row">
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="categoryLabel">分类</span>
+            <select id="categoryFilter" aria-label="按分类筛选"><option value="" data-i18n="allCategories">全部分类</option></select>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="sortLabel">排序</span>
+            <select id="sortFilter" aria-label="排序方式"><option value="stars">Stars</option><option value="updated" data-i18n="recentlyUpdated">最近更新</option></select>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label" data-i18n="codeLanguageLabel">仓库语言</span>
+            <select id="languageFilter" aria-label="按 GitHub 仓库语言筛选"><option value="" data-i18n="all">全部</option><option>Python</option><option>TypeScript</option><option>JavaScript</option><option>Shell</option><option>Go</option><option>Rust</option><option>Java</option><option>C#</option><option>Swift</option><option>Kotlin</option></select>
+          </div>
+          <div class="filter-group region-filter">
+            <span class="filter-label" data-i18n="regionLabel">维护者地区</span>
+            <select id="regionFilter" aria-label="按维护者公开地区筛选"><option value="" data-i18n="all">全部</option><option value="cn" data-i18n="regionCn">中国及港澳台</option><option value="us" data-i18n="regionUs">美国</option><option value="jp" data-i18n="regionJp">日本</option><option value="eu" data-i18n="regionEu">欧洲</option><option value="in" data-i18n="regionIn">印度</option><option value="other" data-i18n="regionOther">其他地区</option><option value="unknown" data-i18n="regionUnknown">未公开</option></select>
+          </div>
+          <button class="reset-button" id="resetFilters" type="button" data-i18n="clearFilters">清除筛选</button>
+        </div>
+        <p class="filter-hint" data-i18n="filterHint">数据由 GitHub Actions 定时更新；浏览页面不会消耗你的 GitHub API 额度。维护者地区根据公开 Profile 推测，可能为空或不准确。</p>
+      </section>
+
+      <section class="catalog" aria-labelledby="catalogTitle">
+        <div class="catalog-heading">
+          <div><p class="eyebrow" data-i18n="directoryEyebrow">STATIC SKILLS DIRECTORY</p><h2 id="catalogTitle" data-i18n="publicRepositories">公开仓库</h2></div>
+          <div class="catalog-status"><strong id="resultCount" data-i18n="loading">正在获取…</strong><span id="rateStatus" data-i18n="staticIndex">静态索引</span></div>
+        </div>
+        <div class="repository-grid" id="repositoryGrid" aria-live="polite">
+          <article class="repository-card skeleton" aria-hidden="true"></article>
+          <article class="repository-card skeleton" aria-hidden="true"></article>
+          <article class="repository-card skeleton" aria-hidden="true"></article>
+        </div>
+        <div class="empty-state" id="emptyState" hidden>
+          <span>NO MATCH</span><h3 data-i18n="noMatchTitle">没有找到符合条件的仓库</h3><p data-i18n="noMatchBody">换一个搜索词，或清除部分筛选条件后再试。</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+    <aside class="detail-drawer" id="detailDrawer" aria-labelledby="drawerTitle" aria-hidden="true">
+      <header class="drawer-header"><div><span>REPOSITORY REVIEW</span><h2 id="drawerTitle" data-i18n="repositoryDetail">仓库详情</h2></div><button id="closeDrawer" type="button" aria-label="关闭详情">×</button></header>
+      <div class="drawer-body" id="drawerBody"><div class="drawer-loading" data-i18n="loadingDetail">正在读取静态详情…</div></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
