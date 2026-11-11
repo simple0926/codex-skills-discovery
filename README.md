@@ -35,7 +35,7 @@ Inference is heuristic. A repository may be classified incorrectly when its meta
 
 The `Refresh Skills Index` workflow runs every 12 hours and can also be started manually. It uses GitHub's authenticated Actions token to:
 
-1. Search public repositories with the `agent-skills` topic.
+1. Search public repositories with either the `agent-skills` or `agent-skill` topic, then merge and deduplicate them.
 2. Read public maintainer locations for region inference.
 3. Find exact `SKILL.md` entries in each repository tree.
 4. Write `data/skills-index.json` and repository-specific files under `data/repos/`.
@@ -76,7 +76,7 @@ The workflow uses the repository's built-in `GITHUB_TOKEN`. If a separate API al
 
 ## Configuration
 
-The default query is `topic:agent-skills`, with up to 200 repositories. Change `SKILLS_INDEX_QUERY` and `SKILLS_INDEX_MAX_REPOSITORIES` in `.github/workflows/refresh-skills-index.yml` to adjust the scope.
+The default refresh runs separate `topic:agent-skills` and `topic:agent-skill` queries, then keeps up to 200 repositories after deduplication. Change `SKILLS_INDEX_QUERIES` and `SKILLS_INDEX_MAX_REPOSITORIES` in `.github/workflows/refresh-skills-index.yml` to adjust the scope; delimit multiple queries with `||`.
 
 ## Verification
 

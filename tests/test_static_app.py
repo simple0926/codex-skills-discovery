@@ -23,7 +23,7 @@ class StaticDiscoveryTests(unittest.TestCase):
         ):
             self.assertIn(marker, html)
         self.assertNotIn("127.0.0.1", html)
-        self.assertNotIn("本地服务", html)
+        self.assertNotIn("鏈湴鏈嶅姟", html)
         self.assertNotIn('id="starsFilter"', html)
         self.assertLess(html.index('id="categoryFilter"'), html.index('id="sortFilter"'))
         self.assertLess(html.index('id="sortFilter"'), html.index('id="languageFilter"'))
@@ -31,7 +31,7 @@ class StaticDiscoveryTests(unittest.TestCase):
         self.assertNotIn('class="method"', html)
         self.assertNotIn("PUBLIC DIRECTORY", html)
         self.assertNotIn("SKILLS INDEX / 2026", html)
-        self.assertNotIn("数据由 GitHub Actions 定时生成。Stars 代表关注度，不代表安全、质量或兼容性。", html)
+        self.assertNotIn("鏁版嵁鐢� GitHub Actions 瀹氭椂鐢熸垚銆係tars 浠ｈ〃鍏虫敞搴︼紝涓嶄唬琛ㄥ畨鍏ㄣ€佽川閲忔垨鍏煎鎬с€�", html)
         self.assertNotIn("<footer", html)
 
     def test_browser_app_uses_static_index_and_only_copies_install_prompt(self) -> None:
@@ -43,6 +43,7 @@ class StaticDiscoveryTests(unittest.TestCase):
         self.assertIn("$skill-installer", script)
         self.assertIn("function classifyRegion", script)
         self.assertIn("function keywordMatches", script)
+        self.assertIn("...(repo.skillNames || [])", script)
         self.assertIn("uiLanguage", script)
         self.assertIn('document.documentElement.lang', script)
         self.assertIn('Search the index', script)
@@ -67,15 +68,15 @@ class StaticDiscoveryTests(unittest.TestCase):
         script = (ROOT / "app.js").read_text(encoding="utf-8")
 
         for category in (
-            "代码开发",
+            "浠ｇ爜寮€鍙�",
             "UI/UX",
-            "原型设计",
-            "需求分析",
-            "视频剪辑",
-            "文案撰写",
-            "自媒体运营",
-            "人力资源管理",
-            "其他",
+            "鍘熷瀷璁捐",
+            "闇€姹傚垎鏋�",
+            "瑙嗛鍓緫",
+            "鏂囨鎾板啓",
+            "鑷獟浣撹繍钀�",
+            "浜哄姏璧勬簮绠＄悊",
+            "鍏朵粬",
         ):
             self.assertIn(category, script)
 

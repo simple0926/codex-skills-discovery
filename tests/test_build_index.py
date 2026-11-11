@@ -13,6 +13,9 @@ SPEC.loader.exec_module(MODULE)
 
 
 class BuildIndexTests(unittest.TestCase):
+    def test_default_query_covers_both_common_agent_skill_topics(self) -> None:
+        self.assertEqual(MODULE.DEFAULT_QUERIES, ("topic:agent-skills", "topic:agent-skill"))
+
     def test_builder_writes_static_index_and_repository_detail(self) -> None:
         repository = {
             "full_name": "example/pdf-skill",
@@ -30,8 +33,11 @@ class BuildIndexTests(unittest.TestCase):
             "owner": {"login": "example", "type": "Organization"},
         }
 
+        seen_queries = []
+
         def api_get(path, query=None):
             if path == "/search/repositories":
+                seen_queries.append(query["q"])
                 return {"items": [repository]}
             if path == "/repos/example/pdf-skill/git/trees/main":
                 return {"tree": [{"path": "skills/pdf/SKILL.md", "type": "blob"}], "truncated": False}
@@ -48,6 +54,10 @@ class BuildIndexTests(unittest.TestCase):
             MODULE.build_catalog(output, api_get=api_get, text_get=text_get, max_repositories=10)
 
             index = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(index["query"], "topic:agent-skills || topic:agent-skill")
+            self.assertEqual(index["queries"], ["topic:agent-skills", "topic:agent-skill"])
+            self.assertEqual(seen_queries, ["topic:agent-skills", "topic:agent-skill"])
+            self.assertEqual(index["repositoryCount"], 1)
             self.assertEqual(index["repositories"][0]["ownerLocation"], "Shanghai, China")
             self.assertEqual(index["repositories"][0]["detailPath"], "data/repos/example__pdf-skill.json")
 

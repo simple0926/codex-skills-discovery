@@ -29,7 +29,7 @@ jobs:
       - name: Build static repository index
         env:
           GITHUB_TOKEN: ${{ secrets.SKILLS_INDEX_TOKEN || github.token }}
-          SKILLS_INDEX_QUERY: "topic:agent-skills"
+          SKILLS_INDEX_QUERIES: "topic:agent-skills||topic:agent-skill"
           SKILLS_INDEX_MAX_REPOSITORIES: "200"
         run: python scripts/build_index.py --output data/skills-index.json
       - name: Commit refreshed data

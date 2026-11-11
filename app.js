@@ -33,7 +33,7 @@ const I18N = {
     noLicense: "未声明许可证", openRepository: "打开仓库 ↗", readSkill: "阅读 SKILL.md →",
     skillUnavailable: "该 SKILL.md 的静态内容暂不可用，请直接打开源文件查看。", reviewFull: "请阅读完整 SKILL.md 了解用途与操作边界。",
     copyInstall: "复制 Codex 安装指令", openSource: "查看源文件 ↗", copied: "已复制安装指令。请粘贴到 Codex 对话中执行。",
-    installPrompt: "请使用 $skill-installer 安装这个 Skill：\n{url}", truncated: "内容较长，静态索引仅展示部分正文。",
+    installPrompt: "请使用 $skill-installer 安装这个 Skill＜\n{url}", truncated: "内容较长，静态索引仅展示部分正文。",
     categories: { uiux: "UI/UX", code: "代码开发", prototype: "原型设计", requirements: "需求分析", video: "视频剪辑", copywriting: "文案撰写", social: "自媒体运营", hr: "人力资源管理", other: "其他" },
     regions: { cn: "中国及港澳台", us: "美国", jp: "日本", eu: "欧洲", in: "印度", other: "其他地区", unknown: "未公开" },
   },
@@ -121,7 +121,7 @@ function classifyRegion(location) {
 function visibleRepositories() {
   const term = els.search.value.trim().toLowerCase();
   const repositories = state.repositories.filter((repo) => {
-    const haystack = [repo.repo, repo.name, repo.description, ...(repo.topics || [])].filter(Boolean).join(" ").toLowerCase();
+    const haystack = [repo.repo, repo.name, repo.description, ...(repo.topics || []), ...(repo.skillNames || [])].filter(Boolean).join(" ").toLowerCase();
     return (!term || haystack.includes(term))
       && (!state.category || repo.category === state.category)
       && (!state.codeLanguage || repo.language === state.codeLanguage)

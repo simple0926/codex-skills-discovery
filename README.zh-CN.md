@@ -35,7 +35,7 @@
 
 `Refresh Skills Index` 工作流默认每 12 小时运行一次，也支持手动触发。它使用 GitHub Actions 提供的认证 Token：
 
-1. 搜索带有 `agent-skills` Topic 的公开仓库。
+1. 分别搜索带有 `agent-skills` 或 `agent-skill` Topic 的公开仓库，再去重合并。
 2. 读取维护者公开地区，用于推测地区分类。
 3. 在仓库目录树中寻找精确命名的 `SKILL.md`。
 4. 生成 `data/skills-index.json` 和 `data/repos/` 下的仓库详情文件。
@@ -76,7 +76,7 @@ GITHUB_TOKEN=你的令牌 python3 scripts/build_index.py --output data/skills-in
 
 ## 调整数据范围
 
-默认查询是 `topic:agent-skills`，最多索引 200 个仓库。修改 `.github/workflows/refresh-skills-index.yml` 中的 `SKILLS_INDEX_QUERY` 和 `SKILLS_INDEX_MAX_REPOSITORIES` 可以调整范围。
+默认分别查询 `topic:agent-skills` 和 `topic:agent-skill`，去重后最多索引 200 个仓库。修改 `.github/workflows/refresh-skills-index.yml` 中的 `SKILLS_INDEX_QUERIES` 和 `SKILLS_INDEX_MAX_REPOSITORIES` 可以调整范围；多个查询用 `||` 分隔。
 
 ## 验证
 
