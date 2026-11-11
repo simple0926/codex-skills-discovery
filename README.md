@@ -20,6 +20,7 @@ A bilingual, static directory for discovering public Codex Skills on GitHub. Git
 Categories are inferred from the repository name, description, topics, and indexed Skill names:
 
 - Code Development
+- UI/UX
 - Prototype Design
 - Requirements Analysis
 - Video Editing

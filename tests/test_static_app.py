@@ -68,6 +68,7 @@ class StaticDiscoveryTests(unittest.TestCase):
 
         for category in (
             "代码开发",
+            "UI/UX",
             "原型设计",
             "需求分析",
             "视频剪辑",
@@ -77,6 +78,8 @@ class StaticDiscoveryTests(unittest.TestCase):
             "其他",
         ):
             self.assertIn(category, script)
+
+        self.assertLess(script.index('["uiux"'), script.index('["prototype"'))
 
 
 if __name__ == "__main__":

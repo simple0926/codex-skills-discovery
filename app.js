@@ -1,7 +1,8 @@
 const INDEX_PATH = "data/skills-index.json";
 const CATEGORY_RULES = [
+  ["uiux", ["ui", "ux", "user interface", "user experience", "design system", "interface design", "interaction design", "visual design", "product design", "figma", "界面设计", "交互设计", "视觉设计", "用户体验", "产品设计", "设计系统"]],
   ["code", ["code", "coding", "developer", "engineering", "programming", "debug", "test", "git", "api", "代码", "开发", "编程", "测试"]],
-  ["prototype", ["prototype", "prototyping", "wireframe", "figma", "ui", "ux", "design system", "mockup", "原型", "交互设计", "界面设计"]],
+  ["prototype", ["prototype", "prototyping", "wireframe", "mockup", "原型"]],
   ["requirements", ["requirement", "requirements", "prd", "product manager", "business analysis", "user story", "需求", "产品经理", "业务分析", "用户故事"]],
   ["video", ["video", "editing", "editor", "subtitle", "caption", "premiere", "davinci", "ffmpeg", "剪辑", "视频", "字幕"]],
   ["copywriting", ["writing", "copywriting", "copywriter", "article", "content writing", "blog", "resume", "文案", "写作", "文章", "简历"]],
@@ -33,7 +34,7 @@ const I18N = {
     skillUnavailable: "该 SKILL.md 的静态内容暂不可用，请直接打开源文件查看。", reviewFull: "请阅读完整 SKILL.md 了解用途与操作边界。",
     copyInstall: "复制 Codex 安装指令", openSource: "查看源文件 ↗", copied: "已复制安装指令。请粘贴到 Codex 对话中执行。",
     installPrompt: "请使用 $skill-installer 安装这个 Skill：\n{url}", truncated: "内容较长，静态索引仅展示部分正文。",
-    categories: { code: "代码开发", prototype: "原型设计", requirements: "需求分析", video: "视频剪辑", copywriting: "文案撰写", social: "自媒体运营", hr: "人力资源管理", other: "其他" },
+    categories: { uiux: "UI/UX", code: "代码开发", prototype: "原型设计", requirements: "需求分析", video: "视频剪辑", copywriting: "文案撰写", social: "自媒体运营", hr: "人力资源管理", other: "其他" },
     regions: { cn: "中国及港澳台", us: "美国", jp: "日本", eu: "欧洲", in: "印度", other: "其他地区", unknown: "未公开" },
   },
   en: {
@@ -58,7 +59,7 @@ const I18N = {
     skillUnavailable: "The static SKILL.md content is unavailable. Open the source file to review it.", reviewFull: "Read the full SKILL.md for purpose and operating boundaries.",
     copyInstall: "Copy Codex install prompt", openSource: "Open source file ↗", copied: "Install prompt copied. Paste it into a Codex chat to continue.",
     installPrompt: "Use $skill-installer to install this Skill:\n{url}", truncated: "This file is long; the static index shows only part of its content.",
-    categories: { code: "Code Development", prototype: "Prototype Design", requirements: "Requirements Analysis", video: "Video Editing", copywriting: "Copywriting", social: "Social Media Operations", hr: "Human Resources Management", other: "Other" },
+    categories: { uiux: "UI/UX", code: "Code Development", prototype: "Prototype Design", requirements: "Requirements Analysis", video: "Video Editing", copywriting: "Copywriting", social: "Social Media Operations", hr: "Human Resources Management", other: "Other" },
     regions: { cn: "China, Hong Kong & Taiwan", us: "United States", jp: "Japan", eu: "Europe", in: "India", other: "Other regions", unknown: "Not disclosed" },
   },
 };
