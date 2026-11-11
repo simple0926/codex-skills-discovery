@@ -1,0 +1,29 @@
+[
+  {
+    "file": "page-1440x900.png",
+    "state": null,
+    "size": "1440x900",
+    "zoom": 1,
+    "animationWaitMs": 0,
+    "issues": [],
+    "lint": []
+  },
+  {
+    "file": "page-390x844.png",
+    "state": null,
+    "size": "390x844",
+    "zoom": 1,
+    "animationWaitMs": 0,
+    "issues": [],
+    "lint": [
+      {
+        "rule": "tightLeading",
+        "label": "多行正文行高过紧",
+        "count": 1,
+        "examples": [
+          "p「数据来自 GitHub 公共 API。Stars」（1.20）"
+        ]
+      }
+    ]
+  }
+]
