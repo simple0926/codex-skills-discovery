@@ -135,6 +135,17 @@
       "error": ""
     },
     {
+      "entry": "skills/learn-taste/SKILL.md",
+      "path": "skills/learn-taste",
+      "name": "learn-taste",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/emilkowalski/skills/blob/main/skills/learn-taste/SKILL.md",
+      "installUrl": "https://github.com/emilkowalski/skills/tree/main/skills/learn-taste",
+      "error": ""
+    },
+    {
       "entry": "skills/mobile-native/SKILL.md",
       "path": "skills/mobile-native",
       "name": "mobile-native",

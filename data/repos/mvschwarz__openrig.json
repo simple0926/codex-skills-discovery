@@ -663,6 +663,17 @@
       "error": ""
     },
     {
+      "entry": "plugins/claude-directory/skills/working-with-an-openrig-team/SKILL.md",
+      "path": "plugins/claude-directory/skills/working-with-an-openrig-team",
+      "name": "working-with-an-openrig-team",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/mvschwarz/openrig/blob/main/plugins/claude-directory/skills/working-with-an-openrig-team/SKILL.md",
+      "installUrl": "https://github.com/mvschwarz/openrig/tree/main/plugins/claude-directory/skills/working-with-an-openrig-team",
+      "error": ""
+    },
+    {
       "entry": "skills/_canonical/core/agent-starters/SKILL.md",
       "path": "skills/_canonical/core/agent-starters",
       "name": "agent-starters",

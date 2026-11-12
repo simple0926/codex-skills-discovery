@@ -949,6 +949,17 @@
       "error": ""
     },
     {
+      "entry": "plugins/trailmark/skills/taint-trace/SKILL.md",
+      "path": "plugins/trailmark/skills/taint-trace",
+      "name": "taint-trace",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/trailofbits/skills/blob/main/plugins/trailmark/skills/taint-trace/SKILL.md",
+      "installUrl": "https://github.com/trailofbits/skills/tree/main/plugins/trailmark/skills/taint-trace",
+      "error": ""
+    },
+    {
       "entry": "plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
       "path": "plugins/trailmark/skills/trailmark-finding-triage",
       "name": "trailmark-finding-triage",
