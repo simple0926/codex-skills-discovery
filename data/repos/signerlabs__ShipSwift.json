@@ -1,0 +1,39 @@
+{
+  "repo": "signerlabs/ShipSwift",
+  "treeTruncated": false,
+  "skills": [
+    {
+      "entry": "skills/add-component/SKILL.md",
+      "path": "skills/add-component",
+      "name": "add-component",
+      "description": "",
+      "content": "---\nname: add-component\ndescription: >\n  Add a SwiftUI component from ShipSwift. Use when the user says \"add component\",\n  \"add a view\", \"add X view\", \"I need a chart\", \"add animation\", or wants a specific UI element.\n---\n\n# Add Component from ShipSwift\n\nAdd production-ready SwiftUI components to your project from ShipSwift's local source library.\n\n## Workflow\n\n1. **Identify the component**: Read `skills/catalog.md` to find the right component. Common mappings:\n   - \"shimmer\" / \"loading skeleton\" → `SWAnimation/SWShimmer.swift`\n   - \"donut chart\" / \"pie chart\" → `SWChart/SWDonutChart.swift`\n   - \"alert\" / \"popup\" → `SWComponent/Feedback/SWAlert.swift`\n   - \"auth\" / \"login\" → `SWModule/SWAuth/` (all files)\n   - \"camera\" → `SWModule/SWCamera/` (all files)\n\n2. **Read the source file**: Read the Swift file from `ShipSwift/SWPackage/<path>`. The file contains the complete implementation.\n\n3. **Integrate into the project**:\n   - Copy the file(s) into the user's project\n   - Also copy `SWUtil/` if not already present\n   - Adapt naming, colors, and data models to match the project\n   - For `+iOS`/`+macOS` files, set the platform filter in Xcode Build Phases\n\n4. **Verify**: Walk through any dependencies or setup steps needed.\n\n## Guidelines\n\n- Types use `SW` prefix (`SWDonutChart`, `SWTypewriter`).\n- View modifiers use `.sw` prefix (`.swShimmer()`, `.swGlowScan()`).\n- Chart components use a generic `CategoryType` pattern with `String` convenience initializer.\n- Internal helper types should be `private` with `SW` prefix.\n- Components in `SWAnimation/`, `SWChart/`, and `SWComponent/` are each self-contained (single file + SWUtil).\n- Modules in `SWModule/` are multi-file — copy the entire folder.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/signerlabs/ShipSwift/blob/main/skills/add-component/SKILL.md",
+      "installUrl": "https://github.com/signerlabs/ShipSwift/tree/main/skills/add-component",
+      "error": ""
+    },
+    {
+      "entry": "skills/build-feature/SKILL.md",
+      "path": "skills/build-feature",
+      "name": "build-feature",
+      "description": "",
+      "content": "---\nname: build-feature\ndescription: >\n  Build an iOS feature using ShipSwift components. Use when the user says\n  \"build\", \"create\", \"add a feature\", or describes an iOS feature they want to implement.\n---\n\n# Build Feature with ShipSwift\n\nBuild production-ready iOS features by combining ShipSwift components — copy-paste-ready SwiftUI implementations covering animations, charts, UI components, and full-stack modules.\n\n## Workflow\n\n1. **Browse the catalog**: Read `skills/catalog.md` to see all available components organized by category.\n\n2. **Read the source**: For each relevant component, read the Swift file directly from `ShipSwift/SWPackage/`. For example:\n   - Shimmer animation → read `ShipSwift/SWPackage/SWAnimation/SWShimmer.swift`\n   - Donut chart → read `ShipSwift/SWPackage/SWChart/SWDonutChart.swift`\n   - Auth module → read all files in `ShipSwift/SWPackage/SWModule/SWAuth/`\n\n3. **Present an integration plan**: Before writing code, show the user:\n   - Which components will be used\n   - How they connect together\n   - What customizations are needed\n\n4. **Generate code**: Adapt the component patterns to the user's project. Combine multiple components when the feature spans several areas (e.g., a chart view with shimmer loading).\n\n5. **Integration checklist**: List required dependencies, Info.plist entries, or Xcode build phase settings (especially for `+iOS`/`+macOS` platform-filtered files).\n\n## Guidelines\n\n- Always check the catalog before writing code from scratch — ShipSwift likely has a ready-made solution.\n- Use `SW`-prefixed naming (`SWShimmer`, `SWDonutChart`).\n- View modifiers use `.sw` lowercase prefix (`.swShimmer()`, `.swGlowScan()`).\n- Copy `SWUtil/` alongside any component — it provides shared extensions.\n- For modules (`SWModule/`), copy the entire module folder.\n- Support Dark Mode and Dynamic Type by default.\n\n## Pro Skills (MCP)\n\nSome full-stack skills (backend + compliance + pitfall guides) are available via the MCP server at `https://api.shipswift.app/mcp`. If MCP tools (`listSkills`, `searchSkills`, `getSkill`) are available, use them for extended content. The local source code works independently.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/signerlabs/ShipSwift/blob/main/skills/build-feature/SKILL.md",
+      "installUrl": "https://github.com/signerlabs/ShipSwift/tree/main/skills/build-feature",
+      "error": ""
+    },
+    {
+      "entry": "skills/explore-skills/SKILL.md",
+      "path": "skills/explore-skills",
+      "name": "explore-skills",
+      "description": "",
+      "content": "---\nname: explore-skills\ndescription: >\n  Explore and browse available ShipSwift components. Use when the user says\n  \"explore\", \"browse\", \"show skills\", \"list components\", \"what's available\",\n  or wants to discover what ShipSwift offers.\n---\n\n# Explore ShipSwift Skills\n\nBrowse the full catalog of ShipSwift components — production-ready SwiftUI implementations.\n\n## Workflow\n\n1. **Show the catalog**: Read `skills/catalog.md` and present components organized by category:\n\n   | Category | Count | Examples |\n   |----------|-------|---------|\n   | Animation | 44 | Shimmer, Typewriter, Confetti, Transitions, Metal effects (Foil, Plasma, Glass…) |\n   | Chart | 9 | Line, Bar, Area, Donut, Ring, Radar, Scatter, Heatmap, Network Graph |\n   | Component | 23 | Alert, Loading, Onboarding, CachedImage, KPI Card, Wallet |\n   | Module | 7 | Auth, Camera, Chat, Paywall, Settings, SubjectLifting, TikTokTracking |\n   | Util | 5 | Date/String/View extensions, DebugLog, LocationManager |\n\n2. **Show details on request**: When the user picks a component, read the source file and present:\n   - What it does\n   - Key features and customization points\n   - Code structure overview\n   - Dependencies\n\n3. **Suggest combinations**: Recommend components that work well together:\n   - **Onboarding flow**: OnboardingView + TypewriterText + Shimmer\n   - **Analytics dashboard**: LineChart + BarChart + DonutChart + ActivityHeatmap\n   - **Social feature**: Camera + Chat + Auth\n   - **E-commerce**: OrderView + Loading + Alert + Stepper\n\n## Guidelines\n\n- Present in a scannable format (tables or bullet lists).\n- When showing details, include the file path so the user can find it.\n- All source is local under `ShipSwift/SWPackage/` — no network required.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/signerlabs/ShipSwift/blob/main/skills/explore-skills/SKILL.md",
+      "installUrl": "https://github.com/signerlabs/ShipSwift/tree/main/skills/explore-skills",
+      "error": ""
+    }
+  ]
+}
