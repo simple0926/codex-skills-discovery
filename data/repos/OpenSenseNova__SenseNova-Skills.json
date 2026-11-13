@@ -641,6 +641,17 @@
       "error": ""
     },
     {
+      "entry": "skills/sn-image-studio/SKILL.md",
+      "path": "skills/sn-image-studio",
+      "name": "sn-image-studio",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/OpenSenseNova/SenseNova-Skills/blob/main/skills/sn-image-studio/SKILL.md",
+      "installUrl": "https://github.com/OpenSenseNova/SenseNova-Skills/tree/main/skills/sn-image-studio",
+      "error": ""
+    },
+    {
       "entry": "skills/sn-infographic/SKILL.md",
       "path": "skills/sn-infographic",
       "name": "sn-infographic",
