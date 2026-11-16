@@ -344,6 +344,17 @@
       "error": ""
     },
     {
+      "entry": "skills/wiki-playbook-review/SKILL.md",
+      "path": "skills/wiki-playbook-review",
+      "name": "wiki-playbook-review",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/Ar9av/obsidian-wiki/blob/main/skills/wiki-playbook-review/SKILL.md",
+      "installUrl": "https://github.com/Ar9av/obsidian-wiki/tree/main/skills/wiki-playbook-review",
+      "error": ""
+    },
+    {
       "entry": "skills/wiki-query/SKILL.md",
       "path": "skills/wiki-query",
       "name": "wiki-query",
