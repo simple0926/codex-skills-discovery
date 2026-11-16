@@ -223,6 +223,28 @@
       "error": ""
     },
     {
+      "entry": "resources/skills/pdf-generation/SKILL.md",
+      "path": "resources/skills/pdf-generation",
+      "name": "pdf-generation",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/aipoch/open-science/blob/main/resources/skills/pdf-generation/SKILL.md",
+      "installUrl": "https://github.com/aipoch/open-science/tree/main/resources/skills/pdf-generation",
+      "error": ""
+    },
+    {
+      "entry": "resources/skills/pptx-generation/SKILL.md",
+      "path": "resources/skills/pptx-generation",
+      "name": "pptx-generation",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/aipoch/open-science/blob/main/resources/skills/pptx-generation/SKILL.md",
+      "installUrl": "https://github.com/aipoch/open-science/tree/main/resources/skills/pptx-generation",
+      "error": ""
+    },
+    {
       "entry": "resources/skills/proteinmpnn/SKILL.md",
       "path": "resources/skills/proteinmpnn",
       "name": "proteinmpnn",
