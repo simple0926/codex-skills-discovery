@@ -597,6 +597,83 @@
       "error": ""
     },
     {
+      "entry": "skills/compileiq-author-objective/SKILL.md",
+      "path": "skills/compileiq-author-objective",
+      "name": "compileiq-author-objective",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-author-objective/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-author-objective",
+      "error": ""
+    },
+    {
+      "entry": "skills/compileiq-booster-pack/SKILL.md",
+      "path": "skills/compileiq-booster-pack",
+      "name": "compileiq-booster-pack",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-booster-pack/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-booster-pack",
+      "error": ""
+    },
+    {
+      "entry": "skills/compileiq-bootstrap/SKILL.md",
+      "path": "skills/compileiq-bootstrap",
+      "name": "compileiq-bootstrap",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-bootstrap/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-bootstrap",
+      "error": ""
+    },
+    {
+      "entry": "skills/compileiq-debug/SKILL.md",
+      "path": "skills/compileiq-debug",
+      "name": "compileiq-debug",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-debug/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-debug",
+      "error": ""
+    },
+    {
+      "entry": "skills/compileiq-run-search/SKILL.md",
+      "path": "skills/compileiq-run-search",
+      "name": "compileiq-run-search",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-run-search/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-run-search",
+      "error": ""
+    },
+    {
+      "entry": "skills/compileiq-search-space/SKILL.md",
+      "path": "skills/compileiq-search-space",
+      "name": "compileiq-search-space",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-search-space/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-search-space",
+      "error": ""
+    },
+    {
+      "entry": "skills/compileiq-validate-result/SKILL.md",
+      "path": "skills/compileiq-validate-result",
+      "name": "compileiq-validate-result",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compileiq-validate-result/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compileiq-validate-result",
+      "error": ""
+    },
+    {
       "entry": "skills/compute-sanitizer-diagnose-cuda-bugs/SKILL.md",
       "path": "skills/compute-sanitizer-diagnose-cuda-bugs",
       "name": "compute-sanitizer-diagnose-cuda-bugs",
@@ -1023,83 +1100,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-common/SKILL.md",
       "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-common",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-compress/SKILL.md",
-      "path": "skills/doca-compress",
-      "name": "doca-compress",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-compress/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-compress",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-container-deployment/SKILL.md",
-      "path": "skills/doca-container-deployment",
-      "name": "doca-container-deployment",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-container-deployment/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-container-deployment",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-debug/SKILL.md",
-      "path": "skills/doca-debug",
-      "name": "doca-debug",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-debug/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-debug",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-devemu/SKILL.md",
-      "path": "skills/doca-devemu",
-      "name": "doca-devemu",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-devemu/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-devemu",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-dma/SKILL.md",
-      "path": "skills/doca-dma",
-      "name": "doca-dma",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-dma/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-dma",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-dms/SKILL.md",
-      "path": "skills/doca-dms",
-      "name": "doca-dms",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-dms/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-dms",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-dpa/SKILL.md",
-      "path": "skills/doca-dpa",
-      "name": "doca-dpa",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-dpa/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-dpa",
       "error": ""
     }
   ]
