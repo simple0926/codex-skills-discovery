@@ -14,6 +14,50 @@
       "error": ""
     },
     {
+      "entry": ".agents/skills/odui-apply/SKILL.md",
+      "path": ".agents/skills/odui-apply",
+      "name": "odui-apply",
+      "description": "Apply an existing Open Design UI component in OpenMotion Studio. Use when wiring a shared control into a Studio feature, replacing a native button or range input, or reviewing whether a call site reuses the component library.",
+      "content": "---\nname: odui-apply\ndescription: Apply an existing Open Design UI component in OpenMotion Studio. Use when wiring a shared control into a Studio feature, replacing a native button or range input, or reviewing whether a call site reuses the component library.\n---\n\n# Apply an Open Design UI component\n\nRead the repository [instructions](../../../AGENTS.md), the [component registry](../../../packages/design-system/components/registry.json), and the [component guide](../../../packages/design-system/components/README.md) before editing. The registry is the source for each component alias, implementation, example and consumer.\n\n1. Inspect the target call site and record its behavior, accessible name, layout and visual states.\n2. Use the registry import alias, such as `open-design-ui/button` or `open-design-ui/slider`. Keep product state and handlers in the feature and preserve layout classes that remain necessary.\n3. Preserve native button `type`, handler, disabled behavior and label. For Slider, preserve its accessible label, range, step and controlled value. Use `onPreview` for temporary feedback and `onCommit` for persisted values when that matches the feature.\n4. If the change removes a native JSX button or range input tracked by `scripts/studio-native-controls.json`, lower only the matching count for that file and remove a zero-count entry.\n5. Run `npm run design:check` and the affected Studio checks. Exercise the real consumer with keyboard input and both themes when the change affects interaction or appearance.\n\nReport the component and call site changed, the behavior exercised and any verification still pending.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/.agents/skills/odui-apply/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/.agents/skills/odui-apply",
+      "error": ""
+    },
+    {
+      "entry": ".agents/skills/odui-build/SKILL.md",
+      "path": ".agents/skills/odui-build",
+      "name": "odui-build",
+      "description": "Create or evolve an Open Design UI component and its catalogue entry. Use when a designer or developer adds a control, changes its API, states, tokens, examples or adoption status.",
+      "content": "---\nname: odui-build\ndescription: Create or evolve an Open Design UI component and its catalogue entry. Use when a designer or developer adds a control, changes its API, states, tokens, examples or adoption status.\n---\n\n# Build an Open Design UI component\n\nRead [AGENTS.md](../../../AGENTS.md), the [component guide](../../../packages/design-system/components/README.md), the [shared design system](../../../packages/design-system/README.md) and the registry before editing.\n\n1. Start with the real use case. Define the states, keyboard behavior, accessible contract, responsive behavior and token roles before writing the recipe.\n2. Change the single source in `packages/design-system`. Add the component source, registry item, interactive example, API notes and a real Studio consumer in the same change. Use the `open-design-ui/*` alias from the registry.\n3. Register a new control as `adoption.mode: \"opt-in\"` with a review condition. Keep it optional until one representative Studio use case is verified. Change to `enforced` only when the native rule and baseline are updated in the same change.\n4. Keep feature data, domain validation and persistence in the consumer. The component owns shared visual states and interaction mechanics.\n5. Run `npm run design:check`, `npm run components:build`, `npm run typecheck:studio` and focused consumer tests. Use `odui-dev` to inspect both themes, keyboard states and the narrow layout.\n\nA component is ready for review only when its preview, registry entry, real consumer and verification evidence are present.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/.agents/skills/odui-build/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/.agents/skills/odui-build",
+      "error": ""
+    },
+    {
+      "entry": ".agents/skills/odui-check/SKILL.md",
+      "path": ".agents/skills/odui-check",
+      "name": "odui-check",
+      "description": "Audit Open Design UI usage and component contributions before review. Use when checking design tokens, component boundaries, native controls, registry adoption, theme parity or a component PR.",
+      "content": "---\nname: odui-check\ndescription: Audit Open Design UI usage and component contributions before review. Use when checking design tokens, component boundaries, native controls, registry adoption, theme parity or a component PR.\n---\n\n# Check Open Design UI compliance\n\nThis Skill is read-only unless a failing check is being fixed. Read [AGENTS.md](../../../AGENTS.md), the [component guide](../../../packages/design-system/components/README.md), `registry.json` and the affected source files.\n\n1. Run `npm run design:check`. It checks token freshness, theme parity, contrast, import boundaries, native-control baselines and registry adoption.\n2. For component changes also run `npm run components:build`, `npm run typecheck:studio` and the focused tests. Use `npm run check` for the repository gate when the change touches shared rules or configuration.\n3. Inspect the real catalogue route in both themes. Check focus, disabled/loading, keyboard behavior, accessible names, narrow widths and console errors. A green static check does not replace browser inspection.\n4. Confirm every registry item has a source, alias, example, API notes, real Studio consumer and an adoption decision. An opt-in item needs a review condition. An enforced item needs a matching native rule.\n5. Report each finding with the file, the violated rule, the smallest repair and the exact check that remains.\n\nDo not lower a baseline to hide an un-migrated control. Do not mark a component enforced before a real consumer has been verified.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/.agents/skills/odui-check/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/.agents/skills/odui-check",
+      "error": ""
+    },
+    {
+      "entry": ".agents/skills/odui-dev/SKILL.md",
+      "path": ".agents/skills/odui-dev",
+      "name": "odui-dev",
+      "description": "Run and use the local Open Design UI catalogue while designing or reviewing components. Use when a designer or developer needs live previews, tokens, states, examples, code, HMR or screenshots.",
+      "content": "---\nname: odui-dev\ndescription: Run and use the local Open Design UI catalogue while designing or reviewing components. Use when a designer or developer needs live previews, tokens, states, examples, code, HMR or screenshots.\n---\n\n# Develop with Open Design UI\n\nRead [AGENTS.md](../../../AGENTS.md) and the [component guide](../../../packages/design-system/components/README.md). The catalogue uses the same component source as Studio and does not require the Studio backend.\n\n1. From the repository root run `npm ci` once when dependencies are missing, then run `npm run components:dev`.\n2. Open the local URL printed by Vite. Use Components for the live state matrix, Design tokens for semantic values and Contribution guide for the workflow.\n3. Use Preview and Code on a component page. Check keyboard, focus, disabled/loading, both themes and relevant narrow widths. Use Copy to Agent or Copy migration prompt when handing work to another Agent.\n4. Keep the dev server running while editing. Saving a component or example should update the page. If a change needs Studio behavior, use `odui-apply` after the catalogue check.\n5. For a shareable artifact run `npm run components:build` and inspect the built route before reporting it.\n\nDo not treat a catalogue preview as proof that a Studio consumer is correct. The real consumer and its focused test remain part of the handoff.\n",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/.agents/skills/odui-dev/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/.agents/skills/odui-dev",
+      "error": ""
+    },
+    {
       "entry": ".codex-plugin/onboarding/SKILL.md",
       "path": ".codex-plugin/onboarding",
       "name": "openmotion-onboarding",
@@ -381,8 +425,8 @@
       "path": "library/skills/openmotion-flat-beat",
       "name": "openmotion-flat-beat",
       "description": "",
-      "content": "---\nname: openmotion-flat-beat\ndescription: >-\n  OpenMotion — Make a punchy product promo that hard-cuts full-screen solid colours on the music beat, one rounded word or simple shape per cut, ending on a big wordmark. Use for consumer apps, courses and launches with an upbeat track and a short, chantable message.\n---\n\n# OpenMotion · Flat Beat\n\nBuild the video as a native OpenMotion HTML/CSS/JS composition through the installed OpenMotion production Skill: create or open the project, author the composition, save with revision protection and preview. This library Skill adds creative direction only; it registers no MCP Tool or production route. Treat palette, font and timing values below as starting points; a supplied Brandkit or the user's brand wins. For missing images, voice or music, first discover providers and model IDs with `openmotion_media_use`, then generate with `openmotion_assets_use`; get the user's consent before any paid generation. Never invent quotes, numbers, specs or dates.\n\n**Status:** recipe / draft. No executable template or rendered comparison yet.\n\n**Use for:** consumer apps, courses and teasers set to an upbeat track.\n\n## Look\n\n| Element | Starting value |\n| --- | --- |\n| Palette | Cream `#F7F1E8`, coral `#FF5A5F`, navy `#16213E`, sun `#FFD166`, teal `#2EC4B6`; each cut is one flat background colour |\n| Type | One rounded heavy sans, 180–260 px for single words, 100–120 px for stacked lines, colour from the same palette |\n| Shapes | Simple flat props between words: a striped ball, three dots, a sunburst of 18 rays; no outlines, no gradients |\n| Grid | Everything centred; at most three short lines on screen |\n| Progress | Optional thin bottom bar filling over the video |\n\n## Motion\n\n- Cut on the beat: measure the track's beats first and place every colour change on one (about 0.5–0.8 s apart at 100–120 BPM).\n- Each cut gets one entrance: scale pop from 1.25 or 0.6 with back-out (300–400 ms), a letter-by-letter rise (40 ms stagger), a drop with bounce, or a roll-in for shapes.\n- Lists build on consecutive beats on one colour (one item per beat) instead of cutting.\n- End on the wordmark with a slightly longer hold (1.5 s+) and one final pulse on the last beat.\n\n## Inputs\n\nRequired: the music track or its BPM, product name, 5–8 one-to-three-word lines. Optional: logo, brand palette of up to five flat colours, a key number the brief supplies. Music is generated through `openmotion_media_use` → `openmotion_assets_use` only with consent if the user has none.\n\n## Avoid\n\nCuts off the beat, gradients or photos, more than three words per cut, two colours in one background, holding any cut longer than 1.5 s before the end card.\n\n## Review\n\nEvery cut within two frames of a beat; each word on screen 0.5 s+; text pairs keep 3:1 contrast.\n\n## Provenance\n\nWritten for OpenMotion after surveying publicly listed workflow names and descriptions in ChatCut's preset gallery (November 2026). Original text; no ChatCut prompts, source code, templates or media are included. Apache-2.0, like the rest of the repository.\n",
-      "contentTruncated": false,
+      "content": "---\nname: openmotion-flat-beat\ndescription: >-\n  OpenMotion — Make a punchy product promo that hard-cuts full-screen solid colours on the music beat, one rounded word or simple shape per cut, ending on a big wordmark. Use for consumer apps, courses and launches with an upbeat track and a short, chantable message.\n---\n\n# OpenMotion · Flat Beat\n\nBuild the video as a native OpenMotion HTML/CSS/JS composition through the installed OpenMotion production Skill: create or open the project, author the composition, save with revision protection and preview. This library Skill adds creative direction only; it registers no MCP Tool or production route. Treat palette, font and timing values below as starting points; a supplied Brandkit or the user's brand wins. For missing images, voice or music, first discover providers and model IDs with `openmotion_media_use`, then generate with `openmotion_assets_use`; get the user's consent before any paid generation. Never invent quotes, numbers, specs or dates.\n\n**Status:** recipe / draft. No executable template or rendered comparison yet.\n\n**Use for:** consumer apps, courses and teasers set to an upbeat track.\n\n## Look\n\n| Element | Starting value |\n| --- | --- |\n| Palette | Cream `#F7F1E8`, coral `#FF5A5F`, navy `#16213E`, sun `#FFD166`, teal `#2EC4B6`; each cut is one flat background colour |\n| Type | One rounded heavy sans, 180–260 px for single words, 100–120 px for stacked lines, colour from the same palette |\n| Shapes | Simple flat props between words: a striped ball, three dots, a sunburst of 18 rays; no outlines, no gradients |\n| Grid | Everything centred; at most three short lines on screen |\n| Progress | Optional thin bottom bar filling over the video |\n\n## Motion\n\n- Cut on the beat: measure the track's beats first and place every colour change on one (about 0.5–0.8 s apart at 100–120 BPM).\n- Each cut gets one entrance: scale pop from 1.25 or 0.6 with back-out (300–400 ms), a letter-by-letter rise (40 ms stagger), a drop with bounce, or a roll-in for shapes.\n- Lists build on consecutive beats on one colour (one item per beat) instead of cutting.\n-",
+      "contentTruncated": true,
       "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-flat-beat/SKILL.md",
       "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-flat-beat",
       "error": ""
@@ -392,7 +436,7 @@
       "path": "library/skills/openmotion-flat-card-explainer",
       "name": "openmotion-flat-card-explainer",
       "description": "",
-      "content": "---\nname: openmotion-flat-card-explainer\ndescription: >-\n  OpenMotion — Make a SaaS explainer from flat UI cards: scattered windows show the problem, a cursor tidies them, a simple board shows the product working. Use for workflow, task and collaboration tools.\n---\n\n# OpenMotion · Flat Card Explainer\n\nBuild the video as a native OpenMotion HTML/CSS/JS composition through the installed OpenMotion production Skill: create or open the project, author the composition, save with revision protection and preview. This library Skill adds creative direction only; it registers no MCP Tool or production route. Treat palette, font and timing values below as starting points; a supplied Brandkit or the user's brand wins. For missing images, voice or music, first discover providers and model IDs with `openmotion_media_use`, then generate with `openmotion_assets_use`; get the user's consent before any paid generation. Never invent quotes, numbers, specs or dates.\n\n**Status:** recipe / draft. No executable template or rendered comparison yet.\n\n**Use for:** showing how a SaaS product works in 3–4 steps without screen recordings.\n\n## Look\n\n| Element | Starting value |\n| --- | --- |\n| Background | Very light grey `#F2F2F6` with a white centre glow |\n| Cards | Flat white windows with an indigo `#5458E8` title bar, yellow `#F7C744` text bars and pink `#F0507A` blocks; radius 8 px, soft drop shadow |\n| Type | Geometric sans in italics for captions (500, 54–60 px) with the key words in extra bold indigo or pink |\n| UI | Simplified boards, lists and avatars rebuilt from the user's product; real labels, no lorem ipsum |\n| Cursor | Dark arrow cursor with a white outline that performs every action |\n\n## Motion\n\n- Problem: 6–8 cards pop in across the frame (60 ms stagger) and drift slowly.\n- Gather: the cursor arrives and the cards fly into one neat stack (600 ms each, power3 in-out, 50 ms stagger).\n- Show: the stack opens into the product view; the cursor drags one item to its next state in ~700 ms and a check mark pops.\n- Close: the view scales away and the call to action rises with a hand-drawn underline drawn in 500 ms.\n\n## Inputs\n\nRequired: product name, the 3–4 workflow steps, real board or list labels, call to action. Optional: screenshots to copy the layout from, brand colours.\n\n## Avoid\n\nPixel-perfect UI with tiny unreadable text, more than one cursor action per step, captions longer than six words, invented customer numbers.\n\n## Review\n\nCard labels are readable at 1×; the cursor reaches each target before acting; captions never overlap cards.\n\n## Provenance\n\nWritten for OpenMotion after surveying publicly listed workflow names and descriptions in ChatCut's preset gallery (November 2026). Original text; no ChatCut prompts, source code, templates or media are included. Apache-2.0, like the rest of the repository.\n",
+      "content": "",
       "contentTruncated": false,
       "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-flat-card-explainer/SKILL.md",
       "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-flat-card-explainer",
@@ -403,8 +447,8 @@
       "path": "library/skills/openmotion-flat-lay-product",
       "name": "openmotion-flat-lay-product",
       "description": "",
-      "content": "---\nname: openmotion-flat-lay-product\ndescription: >-\n  OpenMotion — Turn product shots into an overhead flat-lay animation where each item drops onto a coloured surface in rhythm, then the label and price settle. Use for product ranges, kits, bundles and what's-in-the-box posts.\n---\n\n# OpenMotion · Flat Lay Product\n\nBuild the video as a native OpenMotion HTML/CSS/JS composition through the installed OpenMotion production Skill: create or open the project, author the composition, save with revision protection and preview. This library Skill adds creative direction only; it registers no MCP Tool or production route. Treat palette, font and timing values below as starting points; a supplied Brandkit or the user's brand wins. For missing images, voice or music, first discover providers and model IDs with `openmotion_media_use`, then generate with `openmotion_assets_use`; get the user's consent before any paid generation. Never invent quotes, numbers, specs or dates.\n\n**Status:** recipe / draft. No executable template or rendered comparison yet.\n\n**Use for:** product ranges, gift sets, kits and what's-in-the-box overviews.\n\n## Look\n\n| Element | Starting value |\n| --- | --- |\n| Surface | Two or three bold colour blocks split on a diagonal, e.g. cobalt `#1F4FD8`, leaf `#2E9E5B`, cream `#F3EBDD`; flat, no gradient |\n| Products | Cut-out top-down stills, soft contact shadow 18–24 px at 25% black, light from the top left |\n| Props | 3–6 small props tied to the product, never covering a label |\n| Type | One heavy condensed sans for the name, one plain sans for numbers; numbers like `01 02 03` on or beside each item |\n| Layout | Items on a loose diagonal grid filling 70–85% of the frame; nothing cropped by the edge except props |\n\n## Motion\n\n- Each product drops in from above with a 1.06 → 1.0 scale and a short shadow tighten, 350–450 ms, 250–400 ms apart.\n- Props scatter in after their product, 60–90 ms stagger, small random rotation (±12°).\n- A slow camera push of 3–5% runs the whole shot; no spins.\n- Name and price land last and hold at least 1.5 s.\n\n## Inputs\n\nRequired: a cut-out top-down image of each product, product names, the exact copy and price if any. Optional: props, brand colours, a final call to action.\n\nMissing product stills or props are generated through `openm",
-      "contentTruncated": true,
+      "content": "",
+      "contentTruncated": false,
       "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-flat-lay-product/SKILL.md",
       "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-flat-lay-product",
       "error": ""
@@ -905,6 +949,39 @@
       "error": ""
     },
     {
+      "entry": "library/skills/openmotion-sale-carousel/SKILL.md",
+      "path": "library/skills/openmotion-sale-carousel",
+      "name": "openmotion-sale-carousel",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-sale-carousel/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-sale-carousel",
+      "error": ""
+    },
+    {
+      "entry": "library/skills/openmotion-sale-countdown/SKILL.md",
+      "path": "library/skills/openmotion-sale-countdown",
+      "name": "openmotion-sale-countdown",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-sale-countdown/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-sale-countdown",
+      "error": ""
+    },
+    {
+      "entry": "library/skills/openmotion-sale-promo/SKILL.md",
+      "path": "library/skills/openmotion-sale-promo",
+      "name": "openmotion-sale-promo",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-sale-promo/SKILL.md",
+      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-sale-promo",
+      "error": ""
+    },
+    {
       "entry": "library/skills/openmotion-shortlist-shorts/SKILL.md",
       "path": "library/skills/openmotion-shortlist-shorts",
       "name": "openmotion-shortlist-shorts",
@@ -1023,83 +1100,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-storyboard-to-motion/SKILL.md",
       "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-storyboard-to-motion",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-storybook-myth/SKILL.md",
-      "path": "library/skills/openmotion-storybook-myth",
-      "name": "openmotion-storybook-myth",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-storybook-myth/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-storybook-myth",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-surreal-3d-poster/SKILL.md",
-      "path": "library/skills/openmotion-surreal-3d-poster",
-      "name": "openmotion-surreal-3d-poster",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-surreal-3d-poster/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-surreal-3d-poster",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-talking-head-recreation/SKILL.md",
-      "path": "library/skills/openmotion-talking-head-recreation",
-      "name": "openmotion-talking-head-recreation",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-talking-head-recreation/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-talking-head-recreation",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-time-freeze/SKILL.md",
-      "path": "library/skills/openmotion-time-freeze",
-      "name": "openmotion-time-freeze",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-time-freeze/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-time-freeze",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-translucent-glass/SKILL.md",
-      "path": "library/skills/openmotion-translucent-glass",
-      "name": "openmotion-translucent-glass",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-translucent-glass/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-translucent-glass",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-velocity-lines/SKILL.md",
-      "path": "library/skills/openmotion-velocity-lines",
-      "name": "openmotion-velocity-lines",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-velocity-lines/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-velocity-lines",
-      "error": ""
-    },
-    {
-      "entry": "library/skills/openmotion-website-launch/SKILL.md",
-      "path": "library/skills/openmotion-website-launch",
-      "name": "openmotion-website-launch",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/nexu-io/openmotion/blob/main/library/skills/openmotion-website-launch/SKILL.md",
-      "installUrl": "https://github.com/nexu-io/openmotion/tree/main/library/skills/openmotion-website-launch",
       "error": ""
     }
   ]
