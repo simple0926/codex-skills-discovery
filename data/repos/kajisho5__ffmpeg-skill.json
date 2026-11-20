@@ -135,12 +135,23 @@
       "error": ""
     },
     {
+      "entry": ".claude/skills/review-page-ui/SKILL.md",
+      "path": ".claude/skills/review-page-ui",
+      "name": "building-the-review-page",
+      "description": "Build or change the standalone review page (scripts/_review.py, `npx ffmpeg-skill review`) — the editor-style screen where a person looks at a render project and its result and composes an instruction for their agent. Covers the fixed constraints (one offline HTML file, nothing executed, no new dependency, not a contract tool), the 16:10 three-column layout, the numbering scheme every element carries (S, C, T, A, M, R, P, #), the instruction composer, options read from the contract, playback and waveforms, the interface checklist, and how to verify a change in a real browser. Use when adding a panel, a control or a field to the review page, when changing its HTML/CSS/JS, or when reviewing such a change.",
+      "content": "---\nname: building-the-review-page\ndescription: Build or change the standalone review page (scripts/_review.py, `npx ffmpeg-skill review`) — the editor-style screen where a person looks at a render project and its result and composes an instruction for their agent. Covers the fixed constraints (one offline HTML file, nothing executed, no new dependency, not a contract tool), the 16:10 three-column layout, the numbering scheme every element carries (S, C, T, A, M, R, P, #), the instruction composer, op",
+      "contentTruncated": true,
+      "sourceUrl": "https://github.com/kajisho5/ffmpeg-skill/blob/main/.claude/skills/review-page-ui/SKILL.md",
+      "installUrl": "https://github.com/kajisho5/ffmpeg-skill/tree/main/.claude/skills/review-page-ui",
+      "error": ""
+    },
+    {
       "entry": ".claude/skills/sibling-sweep/SKILL.md",
       "path": ".claude/skills/sibling-sweep",
-      "name": "sweeping-defect-siblings",
-      "description": "Turn one reported defect in ffmpeg-skill into the full list of places the same thing happens — naming the defect",
-      "content": "---\nname: sweeping-defect-siblings\ndescription: Turn one reported defect in ffmpeg-skill into the full list of places the same thing happens — naming the defect's class (an input property, a shared step, a convention that differs between two code paths, an FFmpeg-version behaviour), sweeping every tool with tests/sweep.py and a path-parity probe, separating decided refusals from real siblings, and landing the fix with one regression test per class rather than per report. Use whenever an issue or PR co",
-      "contentTruncated": true,
+      "name": "sibling-sweep",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
       "sourceUrl": "https://github.com/kajisho5/ffmpeg-skill/blob/main/.claude/skills/sibling-sweep/SKILL.md",
       "installUrl": "https://github.com/kajisho5/ffmpeg-skill/tree/main/.claude/skills/sibling-sweep",
       "error": ""

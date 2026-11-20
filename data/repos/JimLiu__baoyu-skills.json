@@ -146,6 +146,17 @@
       "error": ""
     },
     {
+      "entry": "skills/baoyu-podcast-summary/SKILL.md",
+      "path": "skills/baoyu-podcast-summary",
+      "name": "baoyu-podcast-summary",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-podcast-summary/SKILL.md",
+      "installUrl": "https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-podcast-summary",
+      "error": ""
+    },
+    {
       "entry": "skills/baoyu-post-to-wechat/SKILL.md",
       "path": "skills/baoyu-post-to-wechat",
       "name": "baoyu-post-to-wechat",
