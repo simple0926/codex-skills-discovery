@@ -751,6 +751,28 @@
       "error": ""
     },
     {
+      "entry": "skills/cudnn-compile-and-serialize/SKILL.md",
+      "path": "skills/cudnn-compile-and-serialize",
+      "name": "cudnn-compile-and-serialize",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cudnn-compile-and-serialize/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cudnn-compile-and-serialize",
+      "error": ""
+    },
+    {
+      "entry": "skills/cudnn-install/SKILL.md",
+      "path": "skills/cudnn-install",
+      "name": "cudnn-install",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cudnn-install/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cudnn-install",
+      "error": ""
+    },
+    {
       "entry": "skills/cuml/SKILL.md",
       "path": "skills/cuml",
       "name": "cuml",
@@ -1078,28 +1100,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bf3-deployment/SKILL.md",
       "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bf3-deployment",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-bf4-deployment/SKILL.md",
-      "path": "skills/doca-bf4-deployment",
-      "name": "doca-bf4-deployment",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bf4-deployment/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bf4-deployment",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-caps/SKILL.md",
-      "path": "skills/doca-caps",
-      "name": "doca-caps",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-caps/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-caps",
       "error": ""
     }
   ]
