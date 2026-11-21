@@ -267,6 +267,17 @@
       "error": ""
     },
     {
+      "entry": "harness-audit/SKILL.md",
+      "path": "harness-audit",
+      "name": "harness-audit",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/wondelai/skills/blob/main/harness-audit/SKILL.md",
+      "installUrl": "https://github.com/wondelai/skills/tree/main/harness-audit",
+      "error": ""
+    },
+    {
       "entry": "high-output-management/SKILL.md",
       "path": "high-output-management",
       "name": "high-output-management",
@@ -539,6 +550,17 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/wondelai/skills/blob/main/plugins/code-craftsmanship/skills/domain-driven-design/SKILL.md",
       "installUrl": "https://github.com/wondelai/skills/tree/main/plugins/code-craftsmanship/skills/domain-driven-design",
+      "error": ""
+    },
+    {
+      "entry": "plugins/code-craftsmanship/skills/harness-audit/SKILL.md",
+      "path": "plugins/code-craftsmanship/skills/harness-audit",
+      "name": "harness-audit",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/wondelai/skills/blob/main/plugins/code-craftsmanship/skills/harness-audit/SKILL.md",
+      "installUrl": "https://github.com/wondelai/skills/tree/main/plugins/code-craftsmanship/skills/harness-audit",
       "error": ""
     },
     {
@@ -1078,28 +1100,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/wondelai/skills/blob/main/plugins/systems-architecture/skills/release-it/SKILL.md",
       "installUrl": "https://github.com/wondelai/skills/tree/main/plugins/systems-architecture/skills/release-it",
-      "error": ""
-    },
-    {
-      "entry": "plugins/systems-architecture/skills/system-design/SKILL.md",
-      "path": "plugins/systems-architecture/skills/system-design",
-      "name": "system-design",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/wondelai/skills/blob/main/plugins/systems-architecture/skills/system-design/SKILL.md",
-      "installUrl": "https://github.com/wondelai/skills/tree/main/plugins/systems-architecture/skills/system-design",
-      "error": ""
-    },
-    {
-      "entry": "plugins/systems-architecture/skills/team-topologies/SKILL.md",
-      "path": "plugins/systems-architecture/skills/team-topologies",
-      "name": "team-topologies",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/wondelai/skills/blob/main/plugins/systems-architecture/skills/team-topologies/SKILL.md",
-      "installUrl": "https://github.com/wondelai/skills/tree/main/plugins/systems-architecture/skills/team-topologies",
       "error": ""
     }
   ]
