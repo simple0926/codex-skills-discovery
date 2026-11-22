@@ -14,14 +14,14 @@
       "error": ""
     },
     {
-      "entry": "tests/data/expected/agent_skill/preserved_skill/SKILL.md",
-      "path": "tests/data/expected/agent_skill/preserved_skill",
-      "name": "preserved_skill",
+      "entry": "tests/data/expected/main/agent_skill/install_skill_preserves_recovery_copy_when_rollback_fails.recovery/SKILL.md",
+      "path": "tests/data/expected/main/agent_skill/install_skill_preserves_recovery_copy_when_rollback_fails.recovery",
+      "name": "install_skill_preserves_recovery_copy_when_rollback_fails.recovery",
       "description": "",
       "content": "previous skill\n",
       "contentTruncated": false,
-      "sourceUrl": "https://github.com/datamodel-code-generator/datamodel-code-generator/blob/main/tests/data/expected/agent_skill/preserved_skill/SKILL.md",
-      "installUrl": "https://github.com/datamodel-code-generator/datamodel-code-generator/tree/main/tests/data/expected/agent_skill/preserved_skill",
+      "sourceUrl": "https://github.com/datamodel-code-generator/datamodel-code-generator/blob/main/tests/data/expected/main/agent_skill/install_skill_preserves_recovery_copy_when_rollback_fails.recovery/SKILL.md",
+      "installUrl": "https://github.com/datamodel-code-generator/datamodel-code-generator/tree/main/tests/data/expected/main/agent_skill/install_skill_preserves_recovery_copy_when_rollback_fails.recovery",
       "error": ""
     }
   ]
