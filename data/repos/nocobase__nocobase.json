@@ -102,6 +102,17 @@
       "error": ""
     },
     {
+      "entry": "packages/libs/backup/skills/nocobase-app-backup/SKILL.md",
+      "path": "packages/libs/backup/skills/nocobase-app-backup",
+      "name": "nocobase-app-backup",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/nocobase/nocobase/blob/v3/packages/libs/backup/skills/nocobase-app-backup/SKILL.md",
+      "installUrl": "https://github.com/nocobase/nocobase/tree/v3/packages/libs/backup/skills/nocobase-app-backup",
+      "error": ""
+    },
+    {
       "entry": "packages/libs/db/skills/nocobase-db/SKILL.md",
       "path": "packages/libs/db/skills/nocobase-db",
       "name": "nocobase-db",

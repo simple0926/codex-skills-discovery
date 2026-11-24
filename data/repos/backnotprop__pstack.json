@@ -553,6 +553,17 @@
       "error": ""
     },
     {
+      "entry": "skills/reframe/SKILL.md",
+      "path": "skills/reframe",
+      "name": "reframe",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/backnotprop/pstack/blob/main/skills/reframe/SKILL.md",
+      "installUrl": "https://github.com/backnotprop/pstack/tree/main/skills/reframe",
+      "error": ""
+    },
+    {
       "entry": "skills/setup-pstack/SKILL.md",
       "path": "skills/setup-pstack",
       "name": "setup-pstack",
