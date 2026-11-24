@@ -542,6 +542,17 @@
       "error": ""
     },
     {
+      "entry": "skills/cccl/SKILL.md",
+      "path": "skills/cccl",
+      "name": "cccl",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cccl/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cccl",
+      "error": ""
+    },
+    {
       "entry": "skills/cdf-anomalygen/SKILL.md",
       "path": "skills/cdf-anomalygen",
       "name": "cdf-anomalygen",
@@ -770,6 +781,17 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/compute-sanitizer-diagnose-cuda-bugs/SKILL.md",
       "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/compute-sanitizer-diagnose-cuda-bugs",
+      "error": ""
+    },
+    {
+      "entry": "skills/cuda-python/SKILL.md",
+      "path": "skills/cuda-python",
+      "name": "cuda-python",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuda-python/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuda-python",
       "error": ""
     },
     {
@@ -1078,28 +1100,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bench/SKILL.md",
       "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bench",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-bf3-deployment/SKILL.md",
-      "path": "skills/doca-bf3-deployment",
-      "name": "doca-bf3-deployment",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bf3-deployment/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bf3-deployment",
-      "error": ""
-    },
-    {
-      "entry": "skills/doca-bf4-deployment/SKILL.md",
-      "path": "skills/doca-bf4-deployment",
-      "name": "doca-bf4-deployment",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bf4-deployment/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bf4-deployment",
       "error": ""
     }
   ]
