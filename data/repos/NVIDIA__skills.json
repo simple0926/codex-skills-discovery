@@ -234,6 +234,61 @@
       "error": ""
     },
     {
+      "entry": "skills/bionemo-cupotential-benchmark/SKILL.md",
+      "path": "skills/bionemo-cupotential-benchmark",
+      "name": "bionemo-cupotential-benchmark",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/bionemo-cupotential-benchmark/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/bionemo-cupotential-benchmark",
+      "error": ""
+    },
+    {
+      "entry": "skills/bionemo-cupotential-custom-potentials/SKILL.md",
+      "path": "skills/bionemo-cupotential-custom-potentials",
+      "name": "bionemo-cupotential-custom-potentials",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/bionemo-cupotential-custom-potentials/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/bionemo-cupotential-custom-potentials",
+      "error": ""
+    },
+    {
+      "entry": "skills/bionemo-cupotential-install/SKILL.md",
+      "path": "skills/bionemo-cupotential-install",
+      "name": "bionemo-cupotential-install",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/bionemo-cupotential-install/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/bionemo-cupotential-install",
+      "error": ""
+    },
+    {
+      "entry": "skills/bionemo-cupotential-openmm/SKILL.md",
+      "path": "skills/bionemo-cupotential-openmm",
+      "name": "bionemo-cupotential-openmm",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/bionemo-cupotential-openmm/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/bionemo-cupotential-openmm",
+      "error": ""
+    },
+    {
+      "entry": "skills/bionemo-cupotential-validate/SKILL.md",
+      "path": "skills/bionemo-cupotential-validate",
+      "name": "bionemo-cupotential-validate",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/bionemo-cupotential-validate/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/bionemo-cupotential-validate",
+      "error": ""
+    },
+    {
       "entry": "skills/bionemo-diffdock-nim/SKILL.md",
       "path": "skills/bionemo-diffdock-nim",
       "name": "bionemo-diffdock-nim",
@@ -784,28 +839,6 @@
       "error": ""
     },
     {
-      "entry": "skills/cuopt-developer/SKILL.md",
-      "path": "skills/cuopt-developer",
-      "name": "cuopt-developer",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-developer/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-developer",
-      "error": ""
-    },
-    {
-      "entry": "skills/cuopt-install/SKILL.md",
-      "path": "skills/cuopt-install",
-      "name": "cuopt-install",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-install/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-install",
-      "error": ""
-    },
-    {
       "entry": "skills/cuopt-multi-objective-exploration/SKILL.md",
       "path": "skills/cuopt-multi-objective-exploration",
       "name": "cuopt-multi-objective-exploration",
@@ -814,50 +847,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-multi-objective-exploration/SKILL.md",
       "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-multi-objective-exploration",
-      "error": ""
-    },
-    {
-      "entry": "skills/cuopt-numerical-optimization-api/SKILL.md",
-      "path": "skills/cuopt-numerical-optimization-api",
-      "name": "cuopt-numerical-optimization-api",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-numerical-optimization-api/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-numerical-optimization-api",
-      "error": ""
-    },
-    {
-      "entry": "skills/cuopt-numerical-optimization-formulation/SKILL.md",
-      "path": "skills/cuopt-numerical-optimization-formulation",
-      "name": "cuopt-numerical-optimization-formulation",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-numerical-optimization-formulation/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-numerical-optimization-formulation",
-      "error": ""
-    },
-    {
-      "entry": "skills/cuopt-routing-api-python/SKILL.md",
-      "path": "skills/cuopt-routing-api-python",
-      "name": "cuopt-routing-api-python",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-routing-api-python/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-routing-api-python",
-      "error": ""
-    },
-    {
-      "entry": "skills/cuopt-server-api-python/SKILL.md",
-      "path": "skills/cuopt-server-api-python",
-      "name": "cuopt-server-api-python",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/cuopt-server-api-python/SKILL.md",
-      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/cuopt-server-api-python",
       "error": ""
     },
     {
@@ -1100,6 +1089,17 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bf3-deployment/SKILL.md",
       "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bf3-deployment",
+      "error": ""
+    },
+    {
+      "entry": "skills/doca-bf4-deployment/SKILL.md",
+      "path": "skills/doca-bf4-deployment",
+      "name": "doca-bf4-deployment",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/NVIDIA/skills/blob/main/skills/doca-bf4-deployment/SKILL.md",
+      "installUrl": "https://github.com/NVIDIA/skills/tree/main/skills/doca-bf4-deployment",
       "error": ""
     }
   ]
