@@ -256,6 +256,17 @@
       "error": ""
     },
     {
+      "entry": "skills/wiki-decisions/SKILL.md",
+      "path": "skills/wiki-decisions",
+      "name": "wiki-decisions",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/Ar9av/obsidian-wiki/blob/main/skills/wiki-decisions/SKILL.md",
+      "installUrl": "https://github.com/Ar9av/obsidian-wiki/tree/main/skills/wiki-decisions",
+      "error": ""
+    },
+    {
       "entry": "skills/wiki-dedup/SKILL.md",
       "path": "skills/wiki-dedup",
       "name": "wiki-dedup",

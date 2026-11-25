@@ -212,17 +212,6 @@
       "error": ""
     },
     {
-      "entry": "skills/ai-team-orchestration/SKILL.md",
-      "path": "skills/ai-team-orchestration",
-      "name": "ai-team-orchestration",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/github/awesome-copilot/blob/main/skills/ai-team-orchestration/SKILL.md",
-      "installUrl": "https://github.com/github/awesome-copilot/tree/main/skills/ai-team-orchestration",
-      "error": ""
-    },
-    {
       "entry": "skills/anti-ui-slop/SKILL.md",
       "path": "skills/anti-ui-slop",
       "name": "anti-ui-slop",
@@ -1100,6 +1089,17 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/github/awesome-copilot/blob/main/skills/copilot-instructions-blueprint-generator/SKILL.md",
       "installUrl": "https://github.com/github/awesome-copilot/tree/main/skills/copilot-instructions-blueprint-generator",
+      "error": ""
+    },
+    {
+      "entry": "skills/copilot-pr-autopilot/SKILL.md",
+      "path": "skills/copilot-pr-autopilot",
+      "name": "copilot-pr-autopilot",
+      "description": "",
+      "content": "",
+      "contentTruncated": false,
+      "sourceUrl": "https://github.com/github/awesome-copilot/blob/main/skills/copilot-pr-autopilot/SKILL.md",
+      "installUrl": "https://github.com/github/awesome-copilot/tree/main/skills/copilot-pr-autopilot",
       "error": ""
     }
   ]
