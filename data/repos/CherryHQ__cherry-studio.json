@@ -245,28 +245,6 @@
       "error": ""
     },
     {
-      "entry": "resources/code-cli-skills/code-mate-claude-code/SKILL.md",
-      "path": "resources/code-cli-skills/code-mate-claude-code",
-      "name": "code-mate-claude-code",
-      "description": "Run Claude Code non-interactively for coding tasks. Use when the user asks to delegate work to Claude Code.",
-      "content": "---\nname: code-mate-claude-code\ndescription: Run Claude Code non-interactively for coding tasks. Use when the user asks to delegate work to Claude Code.\n---\n\n# Claude Code\n\n## Run\n\n1. Set the Bash working directory to the exact project the user named and set a finite timeout, normally 10 minutes.\n2. Check availability with `command -v claude`. If it is missing, stop and ask the user to install Claude Code in Code Mate.\n3. Run one task and exit:\n\n```bash\nclaude -p \"<prompt>\" --output-format json\n```\n\nPass the prompt as one quoted argument. Parse the JSON result and report stderr and the exit status on failure. Never start the interactive REPL or `/login` flow.\n\n## Authentication And Permissions\n\nIf Claude reports missing login, API credentials, or provider configuration, stop and ask the user to finish Claude Code setup in Code Mate. Never request, read, print, or copy credentials.\n\nKeep tool access read-only by default. Add only the smallest necessary `--allowedTools` entries when the task explicitly requires tools, and grant edit or shell tools only when the user explicitly requested workspace changes. Do not use a permission-bypass mode.\n\nExample: for a review request, ask Claude to inspect the current repository without changing files, run the command above, then summarize the parsed JSON result.\n",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-claude-code/SKILL.md",
-      "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-claude-code",
-      "error": ""
-    },
-    {
-      "entry": "resources/code-cli-skills/code-mate-codex/SKILL.md",
-      "path": "resources/code-cli-skills/code-mate-codex",
-      "name": "code-mate-codex",
-      "description": "Run Codex CLI non-interactively for coding tasks. Use when the user asks to delegate work to Codex.",
-      "content": "---\nname: code-mate-codex\ndescription: Run Codex CLI non-interactively for coding tasks. Use when the user asks to delegate work to Codex.\n---\n\n# Codex CLI\n\n## Run\n\n1. Set the Bash working directory to the exact project the user named and set a finite timeout, normally 10 minutes.\n2. Check availability with `command -v codex`. If it is missing, stop and ask the user to install Codex CLI in Code Mate.\n3. Run one task and exit:\n\n```bash\ncodex exec \"<prompt>\" --json\n```\n\nPass the prompt as one quoted argument. Parse stdout as JSONL, preserve event order, and use the final agent message as the result. Treat an error event or nonzero exit as failure. Never start interactive `codex` or `codex login`.\n\n## Authentication And Permissions\n\nIf Codex reports missing login or API configuration, stop and ask the user to finish Codex setup in Code Mate. Never request, read, print, or copy credentials.\n\nUse `--sandbox read-only` unless the user explicitly requested workspace changes. For an approved edit, use only the narrowest suitable sandbox and working directory; never add `--dangerously-bypass-approvals-and-sandbox`. Add `--skip-git-repo-check` only when the user intentionally selected a non-Git directory.\n\nExample: for a review request, append `--sandbox read-only`, ask Codex not to modify files, and summarize the final JSONL message plus any reported errors.\n",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-codex/SKILL.md",
-      "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-codex",
-      "error": ""
-    },
-    {
       "entry": "resources/code-cli-skills/code-mate-deepseek-harness/SKILL.md",
       "path": "resources/code-cli-skills/code-mate-deepseek-harness",
       "name": "code-mate-deepseek-harness",
@@ -278,22 +256,11 @@
       "error": ""
     },
     {
-      "entry": "resources/code-cli-skills/code-mate-gemini/SKILL.md",
-      "path": "resources/code-cli-skills/code-mate-gemini",
-      "name": "code-mate-gemini",
-      "description": "Run Gemini CLI non-interactively for coding tasks. Use when the user asks to delegate work to Gemini.",
-      "content": "---\nname: code-mate-gemini\ndescription: Run Gemini CLI no",
-      "contentTruncated": true,
-      "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-gemini/SKILL.md",
-      "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-gemini",
-      "error": ""
-    },
-    {
       "entry": "resources/code-cli-skills/code-mate-github-copilot/SKILL.md",
       "path": "resources/code-cli-skills/code-mate-github-copilot",
       "name": "code-mate-github-copilot",
-      "description": "",
-      "content": "",
+      "description": "Run GitHub Copilot CLI non-interactively for coding tasks. Use when the user asks to delegate work to Copilot.",
+      "content": "---\nname: code-mate-github-copilot\ndescription: Run GitHub Copilot CLI non-interactively for coding tasks. Use when the user asks to delegate work to Copilot.\n---\n\n# GitHub Copilot CLI\n\n## Run\n\n1. Set the Bash working directory to the exact project the user named and set a finite timeout, normally 10 minutes.\n2. Check availability with `command -v copilot`. If it is missing, stop and ask the user to install GitHub Copilot CLI in Code Mate.\n3. Run one non-interactive task:\n\n```bash\ncopilot -p \"<prompt>\" -s --output-format json --no-ask-user\n```\n\nPass the prompt as one quoted argument. Parse stdout as JSONL and treat an error event or nonzero exit as failure; the published exit-code contract is incomplete. Never start the interactive UI or an authentication flow.\n\n## Authentication And Permissions\n\nIf Copilot reports a missing login, subscription, or token configuration, stop and ask the user to configure GitHub Copilot CLI in Code Mate. Never request, read, print, or copy credentials.\n\n`--no-ask-user` prevents an unattended approval prompt. Keep tools denied by default. When the user explicitly requests workspace changes, add only narrowly scoped `--allow-tool` entries; never use `--allow-all` as a shortcut.\n\nExample: ask Copilot to explain a failing test without modifying files, run the command above, and summarize the final JSONL result plus any denied tool request.\n",
       "contentTruncated": false,
       "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-github-copilot/SKILL.md",
       "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-github-copilot",
@@ -303,9 +270,9 @@
       "entry": "resources/code-cli-skills/code-mate-hermes/SKILL.md",
       "path": "resources/code-cli-skills/code-mate-hermes",
       "name": "code-mate-hermes",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
+      "description": "Run Hermes Agent non-interactively for local coding tasks. Use when the user asks to delegate work to Hermes.",
+      "content": "---\nname: code-mate-hermes\ndescription: Run Hermes Agent non-interactively for local coding tasks. Use when the user asks to delegate work to Hermes.\n---\n\n# Hermes Agent\n\n## Run\n\n1. Set the Bash working directory to the smallest directory the user authorized and set a finite timeout, normally 10 minutes.\n2. Check availability with `command -v hermes`. If it is missing, stop and ask the user to install Hermes Agent in Code Mate.\n3. Run one task and exit:\n\n```bash\nhermes -z \"<prompt>\"\n```\n\nPass the prompt as one quoted argument. Treat stdout as final text. Exit zero means success, exit one means failure or no response, and exit two means invalid arguments or an empty failed/partial result. Never start the interactive UI or a login flow.\n\n## Authentication And Permissions\n\nIf Hermes reports missing provider, model, or API configuration, stop and ask the user to configure Hermes Agent in Code Mate. Never request, read, print, or copy credentials.\n\nOne-shot mode automatically enables YOLO and hook acceptance and can load tools, memory, rules, and `AGENTS.md`. Do not run it in a writable project for read-only work. Use a disposable or read-only copy instead. Run it against the real project only when the user explicitly requests workspace changes, constrain the directory and prompt, and inspect the diff afterward.\n\nExample: for an approved edit,",
+      "contentTruncated": true,
       "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-hermes/SKILL.md",
       "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-hermes",
       "error": ""
@@ -341,17 +308,6 @@
       "contentTruncated": false,
       "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-openclaw/SKILL.md",
       "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-openclaw",
-      "error": ""
-    },
-    {
-      "entry": "resources/code-cli-skills/code-mate-opencode/SKILL.md",
-      "path": "resources/code-cli-skills/code-mate-opencode",
-      "name": "code-mate-opencode",
-      "description": "",
-      "content": "",
-      "contentTruncated": false,
-      "sourceUrl": "https://github.com/CherryHQ/cherry-studio/blob/main/resources/code-cli-skills/code-mate-opencode/SKILL.md",
-      "installUrl": "https://github.com/CherryHQ/cherry-studio/tree/main/resources/code-cli-skills/code-mate-opencode",
       "error": ""
     },
     {
